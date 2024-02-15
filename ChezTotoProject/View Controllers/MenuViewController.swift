@@ -20,7 +20,7 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
+        //self.view.backgroundColor = .systemBackground
         self.tableView.delegate = self
         self.tableView.dataSource = self
         safeArea = view.layoutMarginsGuide
@@ -39,12 +39,15 @@ class MenuViewController: UIViewController {
     }
     
     func setupTableView() {
+        
         view.addSubview(tableView)
+        
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     

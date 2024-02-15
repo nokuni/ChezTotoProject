@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
         topContent()
         scheduleList()
         informations()
@@ -712,13 +711,7 @@ extension ViewController {
     
     @objc func accessToMenu() {
         let viewController = MenuViewController()
-        
-        guard let navigationController = self.navigationController else {
-            print("No navigation controller")
-            return
-        }
-        navigationController.pushViewController(viewController, animated: true)
-        print("Pushed")
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
     func menuButton() {
