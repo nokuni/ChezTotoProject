@@ -1,0 +1,39 @@
+[
+    {
+        "name": "Chez Toto",
+        "schedules":
+        [
+            {
+                "day": "Monday",
+                "operationHours": "Closed"
+            },
+            {
+                "day": "Tuesday",
+                "operationHours": "11h30 - 14h30・ 18h30 - 22h00"
+            },
+            {
+                "day": "Wednesday",
+                "operationHours": "11h30 - 14h30・ 18h30 - 22h00"
+            },
+            {
+                "day": "Thursday",
+                "operationHours": "11h30 - 14h30・ 18h30 - 22h00"
+            },
+            {
+                "day": "Friday",
+                "operationHours": "11h30 - 14h30・ 18h30 - 22h00"
+            },
+            {
+                "day": "Saturday",
+                "operationHours": "11h30 - 14h30・ 18h30 - 22h00"
+            },
+            {
+                "day": "Sunday",
+                "operationHours": "Closed"
+            }
+        ],
+        "address": "12  Rue Tolbiac - 75013 Paris",
+        "website": "www.cheztotopizza.fr",
+        "phoneNumber": "06 12 34 56 78"
+    }
+]

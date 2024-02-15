@@ -13,6 +13,15 @@
 		A846F2582B0CC55600D8CA14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A846F2562B0CC55600D8CA14 /* Main.storyboard */; };
 		A846F25A2B0CC55700D8CA14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A846F2592B0CC55700D8CA14 /* Assets.xcassets */; };
 		A846F25D2B0CC55700D8CA14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A846F25B2B0CC55700D8CA14 /* LaunchScreen.storyboard */; };
+		A846F2652B0CC63800D8CA14 /* RestaurantMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A846F2642B0CC63800D8CA14 /* RestaurantMenu.swift */; };
+		A846F2672B0CC6B900D8CA14 /* DIsh.swift in Sources */ = {isa = PBXBuildFile; fileRef = A846F2662B0CC6B900D8CA14 /* DIsh.swift */; };
+		A846F2712B0CC7E800D8CA14 /* Utility Toolbox in Frameworks */ = {isa = PBXBuildFile; productRef = A846F2702B0CC7E800D8CA14 /* Utility Toolbox */; };
+		A846F2742B0CC84300D8CA14 /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = A846F2732B0CC84300D8CA14 /* restaurants.json */; };
+		A846F2762B0CD06A00D8CA14 /* PlusJakartaSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A846F2752B0CD06A00D8CA14 /* PlusJakartaSans.ttf */; };
+		A846F2782B0CEC0E00D8CA14 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A846F2772B0CEC0E00D8CA14 /* Restaurant.swift */; };
+		A846F27A2B0CEC7200D8CA14 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A846F2792B0CEC7200D8CA14 /* Schedule.swift */; };
+		A846F27F2B0E134600D8CA14 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A846F27E2B0E134600D8CA14 /* MenuViewController.swift */; };
+		A846F2822B0E1CFC00D8CA14 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A846F2812B0E1CFC00D8CA14 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,13 @@
 		A846F2592B0CC55700D8CA14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A846F25C2B0CC55700D8CA14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A846F25E2B0CC55700D8CA14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A846F2642B0CC63800D8CA14 /* RestaurantMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenu.swift; sourceTree = "<group>"; };
+		A846F2662B0CC6B900D8CA14 /* DIsh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIsh.swift; sourceTree = "<group>"; };
+		A846F2732B0CC84300D8CA14 /* restaurants.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = restaurants.json; sourceTree = "<group>"; };
+		A846F2752B0CD06A00D8CA14 /* PlusJakartaSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlusJakartaSans.ttf; sourceTree = "<group>"; };
+		A846F2772B0CEC0E00D8CA14 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		A846F2792B0CEC7200D8CA14 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		A846F27E2B0E134600D8CA14 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A846F2822B0E1CFC00D8CA14 /* Kingfisher in Frameworks */,
+				A846F2712B0CC7E800D8CA14 /* Utility Toolbox in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +76,44 @@
 			children = (
 				A846F2502B0CC55600D8CA14 /* AppDelegate.swift */,
 				A846F2522B0CC55600D8CA14 /* SceneDelegate.swift */,
-				A846F2542B0CC55600D8CA14 /* ViewController.swift */,
+				A846F27D2B0E133700D8CA14 /* View Controllers */,
+				A846F2722B0CC82400D8CA14 /* Resources */,
+				A846F2682B0CC6C100D8CA14 /* Models */,
 				A846F2562B0CC55600D8CA14 /* Main.storyboard */,
 				A846F2592B0CC55700D8CA14 /* Assets.xcassets */,
 				A846F25B2B0CC55700D8CA14 /* LaunchScreen.storyboard */,
 				A846F25E2B0CC55700D8CA14 /* Info.plist */,
 			);
 			path = ChezTotoProject;
+			sourceTree = "<group>";
+		};
+		A846F2682B0CC6C100D8CA14 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A846F2642B0CC63800D8CA14 /* RestaurantMenu.swift */,
+				A846F2662B0CC6B900D8CA14 /* DIsh.swift */,
+				A846F2772B0CEC0E00D8CA14 /* Restaurant.swift */,
+				A846F2792B0CEC7200D8CA14 /* Schedule.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A846F2722B0CC82400D8CA14 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A846F2752B0CD06A00D8CA14 /* PlusJakartaSans.ttf */,
+				A846F2732B0CC84300D8CA14 /* restaurants.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A846F27D2B0E133700D8CA14 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A846F2542B0CC55600D8CA14 /* ViewController.swift */,
+				A846F27E2B0E134600D8CA14 /* MenuViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +132,10 @@
 			dependencies = (
 			);
 			name = ChezTotoProject;
+			packageProductDependencies = (
+				A846F2702B0CC7E800D8CA14 /* Utility Toolbox */,
+				A846F2812B0E1CFC00D8CA14 /* Kingfisher */,
+			);
 			productName = ChezTotoProject;
 			productReference = A846F24D2B0CC55600D8CA14 /* ChezTotoProject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +164,10 @@
 				Base,
 			);
 			mainGroup = A846F2442B0CC55600D8CA14;
+			packageReferences = (
+				A846F26F2B0CC7E800D8CA14 /* XCRemoteSwiftPackageReference "UtilityToolbox" */,
+				A846F2802B0E1CFC00D8CA14 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = A846F24E2B0CC55600D8CA14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +184,9 @@
 			files = (
 				A846F25D2B0CC55700D8CA14 /* LaunchScreen.storyboard in Resources */,
 				A846F25A2B0CC55700D8CA14 /* Assets.xcassets in Resources */,
+				A846F2742B0CC84300D8CA14 /* restaurants.json in Resources */,
 				A846F2582B0CC55600D8CA14 /* Main.storyboard in Resources */,
+				A846F2762B0CD06A00D8CA14 /* PlusJakartaSans.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +197,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A846F2782B0CEC0E00D8CA14 /* Restaurant.swift in Sources */,
 				A846F2552B0CC55600D8CA14 /* ViewController.swift in Sources */,
+				A846F2652B0CC63800D8CA14 /* RestaurantMenu.swift in Sources */,
 				A846F2512B0CC55600D8CA14 /* AppDelegate.swift in Sources */,
 				A846F2532B0CC55600D8CA14 /* SceneDelegate.swift in Sources */,
+				A846F27A2B0CEC7200D8CA14 /* Schedule.swift in Sources */,
+				A846F2672B0CC6B900D8CA14 /* DIsh.swift in Sources */,
+				A846F27F2B0E134600D8CA14 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +360,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChezTotoProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -324,7 +388,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChezTotoProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -363,6 +427,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A846F26F2B0CC7E800D8CA14 /* XCRemoteSwiftPackageReference "UtilityToolbox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nokuni/UtilityToolbox";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		A846F2802B0E1CFC00D8CA14 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A846F2702B0CC7E800D8CA14 /* Utility Toolbox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A846F26F2B0CC7E800D8CA14 /* XCRemoteSwiftPackageReference "UtilityToolbox" */;
+			productName = "Utility Toolbox";
+		};
+		A846F2812B0E1CFC00D8CA14 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A846F2802B0E1CFC00D8CA14 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A846F2452B0CC55600D8CA14 /* Project object */;
 }
